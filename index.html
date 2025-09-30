@@ -1,0 +1,417 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JL Lanches - Cardápio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="banner">
+    <img src="images/banner.jpg" alt="Banner JL Lanches">
+  </div>
+  
+  <div class="container">
+    <div class="header">🍔 JL Lanches</div>
+    <div class="sub">Rua Manoel Braga, 494 - Delivery: (88) 9 ...</div>
+
+  <div class="container">
+    <div class="header">🍔 JL Lanches</div>
+    <div class="sub">Rua Manoel Braga, 494 - Delivery: (88) 9 9270-8191</div>
+    <div class="card">
+      <div class="nav">
+        <button onclick="document.getElementById('pratos').scrollIntoView({behavior:'smooth'})">Pratos</button>
+        <button onclick="document.getElementById('burgers').scrollIntoView({behavior:'smooth'})">Burgers</button>
+        <button onclick="document.getElementById('porcoes').scrollIntoView({behavior:'smooth'})">Porções</button>
+        <button onclick="document.getElementById('sucos').scrollIntoView({behavior:'smooth'})">Sucos</button>
+        <button onclick="document.getElementById('refrigerantes').scrollIntoView({behavior:'smooth'})">Refrigerantes</button>
+        <button onclick="document.getElementById('cervejas').scrollIntoView({behavior:'smooth'})">Cervejas</button>
+      </div>
+<div id="pratos" class="section"><div class="section-title">🍽️ Pratos</div><div class="grid">\n  <div class="item">
+    <img src="images/prato_parmegiana_carne.jpg" alt="Parmegiana de Carne" />
+    <div class="meta">
+      <h4>Parmegiana de Carne</h4>
+      <p>Acompanha arroz e batata frita</p>
+      <div class="controls">
+        <input type="number" id="qty_Parmegiana_de_Carne" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Parmegiana de Carne', 25.0, 'qty_Parmegiana_de_Carne')">Adicionar · R$ 25.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 25.00</div>
+  </div>\n  <div class="item">
+    <img src="images/prato_parmegiana_frango.jpg" alt="Parmegiana de Frango" />
+    <div class="meta">
+      <h4>Parmegiana de Frango</h4>
+      <p>Acompanha arroz e batata frita</p>
+      <div class="controls">
+        <input type="number" id="qty_Parmegiana_de_Frango" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Parmegiana de Frango', 23.0, 'qty_Parmegiana_de_Frango')">Adicionar · R$ 23.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 23.00</div>
+  </div>\n  <div class="item">
+    <img src="images/prato_lasanha.jpg" alt="Lasanha à Bolonhesa" />
+    <div class="meta">
+      <h4>Lasanha à Bolonhesa</h4>
+      <p>Deliciosa lasanha caseira</p>
+      <div class="controls">
+        <input type="number" id="qty_Lasanha_à_Bolonhesa" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Lasanha à Bolonhesa', 12.0, 'qty_Lasanha_à_Bolonhesa')">Adicionar · R$ 12.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 12.00</div>
+  </div>\n  <div class="item">
+    <img src="images/prato_contrafile_grelhado.jpg" alt="Contra Filé Grelhado" />
+    <div class="meta">
+      <h4>Contra Filé Grelhado</h4>
+      <p>Arroz, fritas e feijão</p>
+      <div class="controls">
+        <input type="number" id="qty_Contra_Filé_Grelhado" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Contra Filé Grelhado', 22.0, 'qty_Contra_Filé_Grelhado')">Adicionar · R$ 22.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 22.00</div>
+  </div>\n  <div class="item">
+    <img src="images/prato_contrafile_milanesa.jpg" alt="Contra Filé à Milanesa" />
+    <div class="meta">
+      <h4>Contra Filé à Milanesa</h4>
+      <p>Arroz, fritas e feijão</p>
+      <div class="controls">
+        <input type="number" id="qty_Contra_Filé_à_Milanesa" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Contra Filé à Milanesa', 22.0, 'qty_Contra_Filé_à_Milanesa')">Adicionar · R$ 22.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 22.00</div>
+  </div>\n  <div class="item">
+    <img src="images/prato_frango_grelhado.jpg" alt="Frango Grelhado" />
+    <div class="meta">
+      <h4>Frango Grelhado</h4>
+      <p>Arroz, fritas e feijão</p>
+      <div class="controls">
+        <input type="number" id="qty_Frango_Grelhado" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Frango Grelhado', 17.0, 'qty_Frango_Grelhado')">Adicionar · R$ 17.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 17.00</div>
+  </div>\n  <div class="item">
+    <img src="images/prato_frango_milanesa.jpg" alt="Frango à Milanesa" />
+    <div class="meta">
+      <h4>Frango à Milanesa</h4>
+      <p>Arroz, fritas e feijão</p>
+      <div class="controls">
+        <input type="number" id="qty_Frango_à_Milanesa" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Frango à Milanesa', 17.0, 'qty_Frango_à_Milanesa')">Adicionar · R$ 17.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 17.00</div>
+  </div>\n  <div class="item">
+    <img src="images/prato_carne_cozida.jpg" alt="Carne Cozida" />
+    <div class="meta">
+      <h4>Carne Cozida</h4>
+      <p>Arroz, macarrão e feijão</p>
+      <div class="controls">
+        <input type="number" id="qty_Carne_Cozida" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Carne Cozida', 15.0, 'qty_Carne_Cozida')">Adicionar · R$ 15.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 15.00</div>
+  </div>\n  <div class="item">
+    <img src="images/prato_calabresa.jpg" alt="Calabresa" />
+    <div class="meta">
+      <h4>Calabresa</h4>
+      <p>Arroz, fritas e feijão</p>
+      <div class="controls">
+        <input type="number" id="qty_Calabresa" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Calabresa', 15.0, 'qty_Calabresa')">Adicionar · R$ 15.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 15.00</div>
+  </div>\n  <div class="item">
+    <img src="images/prato_contrafile_espaguete.jpg" alt="Contra Filé (Espaguete)" />
+    <div class="meta">
+      <h4>Contra Filé (Espaguete)</h4>
+      <p>Espaguete ao alho e óleo</p>
+      <div class="controls">
+        <input type="number" id="qty_Contra_Filé_(Espaguete)" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Contra Filé (Espaguete)', 22.0, 'qty_Contra_Filé_(Espaguete)')">Adicionar · R$ 22.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 22.00</div>
+  </div>\n  <div class="item">
+    <img src="images/prato_omelete.jpg" alt="Omelete" />
+    <div class="meta">
+      <h4>Omelete</h4>
+      <p>Acompanhamento à escolha</p>
+      <div class="controls">
+        <input type="number" id="qty_Omelete" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Omelete', 15.0, 'qty_Omelete')">Adicionar · R$ 15.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 15.00</div>
+  </div>\n</div></div>\n<div id="burgers" class="section"><div class="section-title">🍔 Burgers</div><div class="grid">\n  <div class="item">
+    <img src="images/burguer_x_salada.jpg" alt="X-Salada" />
+    <div class="meta">
+      <h4>X-Salada</h4>
+      <p>Hambúrguer, alface, tomate, queijo</p>
+      <div class="controls">
+        <input type="number" id="qty_X-Salada" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('X-Salada', 11.0, 'qty_X-Salada')">Adicionar · R$ 11.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 11.00</div>
+  </div>\n  <div class="item">
+    <img src="images/burguer_x_bacon.jpg" alt="X-Bacon" />
+    <div class="meta">
+      <h4>X-Bacon</h4>
+      <p>Hambúrguer, bacon, queijo</p>
+      <div class="controls">
+        <input type="number" id="qty_X-Bacon" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('X-Bacon', 8.0, 'qty_X-Bacon')">Adicionar · R$ 8.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 8.00</div>
+  </div>\n  <div class="item">
+    <img src="images/burguer_burguer.jpg" alt="Burguer" />
+    <div class="meta">
+      <h4>Burguer</h4>
+      <p>Hambúrguer, queijo, ovo, batata</p>
+      <div class="controls">
+        <input type="number" id="qty_Burguer" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Burguer', 11.0, 'qty_Burguer')">Adicionar · R$ 11.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 11.00</div>
+  </div>\n  <div class="item">
+    <img src="images/burguer_jl.jpg" alt="JL" />
+    <div class="meta">
+      <h4>JL</h4>
+      <p>Hambúrguer, bacon, queijo</p>
+      <div class="controls">
+        <input type="number" id="qty_JL" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('JL', 10.0, 'qty_JL')">Adicionar · R$ 10.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 10.00</div>
+  </div>\n</div></div>\n<div id="porcoes" class="section"><div class="section-title">🍟 Porções</div><div class="grid">\n  <div class="item">
+    <img src="images/porcao_contrafile.jpg" alt="Porção de Contra Filé" />
+    <div class="meta">
+      <h4>Porção de Contra Filé</h4>
+      <p>Porção suculenta de carne</p>
+      <div class="controls">
+        <input type="number" id="qty_Porcão_de_Contra_Filé" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Porção de Contra Filé', 35.0, 'qty_Porcão_de_Contra_Filé')">Adicionar · R$ 35.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 35.00</div>
+  </div>\n  <div class="item">
+    <img src="images/porcao_batata_frita.jpg" alt="Porção de Batata Frita" />
+    <div class="meta">
+      <h4>Porção de Batata Frita</h4>
+      <p>Crocantes e deliciosas</p>
+      <div class="controls">
+        <input type="number" id="qty_Porcão_de_Batata_Frita" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Porção de Batata Frita', 18.0, 'qty_Porcão_de_Batata_Frita')">Adicionar · R$ 18.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 18.00</div>
+  </div>\n  <div class="item">
+    <img src="images/porcao_calabresa.jpg" alt="Porção de Calabresa" />
+    <div class="meta">
+      <h4>Porção de Calabresa</h4>
+      <p>Saborosa</p>
+      <div class="controls">
+        <input type="number" id="qty_Porcão_de_Calabresa" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Porção de Calabresa', 25.0, 'qty_Porcão_de_Calabresa')">Adicionar · R$ 25.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 25.00</div>
+  </div>\n  <div class="item">
+    <img src="images/porcao_queijo.jpg" alt="Porção de Queijo" />
+    <div class="meta">
+      <h4>Porção de Queijo</h4>
+      <p>Queijo empanado</p>
+      <div class="controls">
+        <input type="number" id="qty_Porcão_de_Queijo" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Porção de Queijo', 15.0, 'qty_Porcão_de_Queijo')">Adicionar · R$ 15.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 15.00</div>
+  </div>\n</div></div>\n<div id="sucos" class="section"><div class="section-title">🥤 Sucos</div><div class="grid">\n  <div class="item">
+    <img src="images/suco_abacaxi.jpg" alt="Suco de Abacaxi" />
+    <div class="meta">
+      <h4>Suco de Abacaxi</h4>
+      <p>Natural e geladinho</p>
+      <div class="controls">
+        <input type="number" id="qty_Suco_de_Abacaxi" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Suco de Abacaxi', 4.0, 'qty_Suco_de_Abacaxi')">Adicionar · R$ 4.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 4.00</div>
+  </div>\n  <div class="item">
+    <img src="images/suco_goiaba.jpg" alt="Suco de Goiaba" />
+    <div class="meta">
+      <h4>Suco de Goiaba</h4>
+      <p>Delicioso</p>
+      <div class="controls">
+        <input type="number" id="qty_Suco_de_Goiaba" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Suco de Goiaba', 4.0, 'qty_Suco_de_Goiaba')">Adicionar · R$ 4.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 4.00</div>
+  </div>\n  <div class="item">
+    <img src="images/suco_limao.jpg" alt="Suco de Limão" />
+    <div class="meta">
+      <h4>Suco de Limão</h4>
+      <p>Refrescante</p>
+      <div class="controls">
+        <input type="number" id="qty_Suco_de_Limão" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Suco de Limão', 4.0, 'qty_Suco_de_Limão')">Adicionar · R$ 4.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 4.00</div>
+  </div>\n  <div class="item">
+    <img src="images/suco_maracuja.jpg" alt="Suco de Maracujá" />
+    <div class="meta">
+      <h4>Suco de Maracujá</h4>
+      <p>Açúcar a gosto</p>
+      <div class="controls">
+        <input type="number" id="qty_Suco_de_Maracujá" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Suco de Maracujá', 4.0, 'qty_Suco_de_Maracujá')">Adicionar · R$ 4.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 4.00</div>
+  </div>\n  <div class="item">
+    <img src="images/suco_laranja.jpg" alt="Suco de Laranja" />
+    <div class="meta">
+      <h4>Suco de Laranja</h4>
+      <p>Feito na hora</p>
+      <div class="controls">
+        <input type="number" id="qty_Suco_de_Laranja" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Suco de Laranja', 4.0, 'qty_Suco_de_Laranja')">Adicionar · R$ 4.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 4.00</div>
+  </div>\n</div></div>\n<div id="refrigerantes" class="section"><div class="section-title">🥤 Refrigerantes</div><div class="grid">\n  <div class="item">
+    <img src="images/refri_coca_2l.jpg" alt="Coca-Cola 2L" />
+    <div class="meta">
+      <h4>Coca-Cola 2L</h4>
+      <p></p>
+      <div class="controls">
+        <input type="number" id="qty_Coca-Cola_2L" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Coca-Cola 2L', 12.0, 'qty_Coca-Cola_2L')">Adicionar · R$ 12.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 12.00</div>
+  </div>\n  <div class="item">
+    <img src="images/refri_coca_1l.jpg" alt="Coca-Cola 1L" />
+    <div class="meta">
+      <h4>Coca-Cola 1L</h4>
+      <p></p>
+      <div class="controls">
+        <input type="number" id="qty_Coca-Cola_1L" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Coca-Cola 1L', 8.0, 'qty_Coca-Cola_1L')">Adicionar · R$ 8.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 8.00</div>
+  </div>\n  <div class="item">
+    <img src="images/refri_coca_lata.jpg" alt="Coca-Cola Lata 350ml" />
+    <div class="meta">
+      <h4>Coca-Cola Lata 350ml</h4>
+      <p></p>
+      <div class="controls">
+        <input type="number" id="qty_Coca-Cola_Lata_350ml" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Coca-Cola Lata 350ml', 5.0, 'qty_Coca-Cola_Lata_350ml')">Adicionar · R$ 5.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 5.00</div>
+  </div>\n  <div class="item">
+    <img src="images/refri_guarana_2l.jpg" alt="Guaraná 2L" />
+    <div class="meta">
+      <h4>Guaraná 2L</h4>
+      <p></p>
+      <div class="controls">
+        <input type="number" id="qty_Guaraná_2L" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Guaraná 2L', 10.0, 'qty_Guaraná_2L')">Adicionar · R$ 10.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 10.00</div>
+  </div>\n  <div class="item">
+    <img src="images/refri_guarana_1l.jpg" alt="Guaraná 1L" />
+    <div class="meta">
+      <h4>Guaraná 1L</h4>
+      <p></p>
+      <div class="controls">
+        <input type="number" id="qty_Guaraná_1L" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Guaraná 1L', 7.0, 'qty_Guaraná_1L')">Adicionar · R$ 7.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 7.00</div>
+  </div>\n  <div class="item">
+    <img src="images/refri_pepsi_2l.jpg" alt="Pepsi 2L" />
+    <div class="meta">
+      <h4>Pepsi 2L</h4>
+      <p></p>
+      <div class="controls">
+        <input type="number" id="qty_Pepsi_2L" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Pepsi 2L', 10.0, 'qty_Pepsi_2L')">Adicionar · R$ 10.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 10.00</div>
+  </div>\n  <div class="item">
+    <img src="images/refri_pepsi_1l.jpg" alt="Pepsi 1L" />
+    <div class="meta">
+      <h4>Pepsi 1L</h4>
+      <p></p>
+      <div class="controls">
+        <input type="number" id="qty_Pepsi_1L" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Pepsi 1L', 7.0, 'qty_Pepsi_1L')">Adicionar · R$ 7.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 7.00</div>
+  </div>\n</div></div>\n<div id="cervejas" class="section"><div class="section-title">🍺 Cervejas</div><div class="grid">\n  <div class="item">
+    <img src="images/cerveja_brahma_600.jpg" alt="Brahma 600ml" />
+    <div class="meta">
+      <h4>Brahma 600ml</h4>
+      <p></p>
+      <div class="controls">
+        <input type="number" id="qty_Brahma_600ml" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Brahma 600ml', 10.0, 'qty_Brahma_600ml')">Adicionar · R$ 10.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 10.00</div>
+  </div>\n  <div class="item">
+    <img src="images/cerveja_heineken_330.jpg" alt="Heineken 330ml" />
+    <div class="meta">
+      <h4>Heineken 330ml</h4>
+      <p></p>
+      <div class="controls">
+        <input type="number" id="qty_Heineken_330ml" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Heineken 330ml', 10.0, 'qty_Heineken_330ml')">Adicionar · R$ 10.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 10.00</div>
+  </div>\n  <div class="item">
+    <img src="images/cerveja_skol_600.jpg" alt="Skol 600ml" />
+    <div class="meta">
+      <h4>Skol 600ml</h4>
+      <p></p>
+      <div class="controls">
+        <input type="number" id="qty_Skol_600ml" class="qty" value="1" min="1"/>
+        <button class="add-btn" onclick="addToCart('Skol 600ml', 10.0, 'qty_Skol_600ml')">Adicionar · R$ 10.00</button>
+      </div>
+    </div>
+    <div class="price">R$ 10.00</div>
+  </div>\n</div></div>\n
+    </div> <!-- card -->
+  </div> <!-- container -->
+
+  <a class="cart-page-link" href="carrinho.html">Ver Carrinho 🛒</a>
+
+  <footer>
+    Desenvolvido para JL Lanches • Rua Manoel Braga, 494 • Delivery: (88) 9 9270-8191
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
